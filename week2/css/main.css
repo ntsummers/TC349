@@ -96,11 +96,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+	background-color: #ecf0f1;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;	
+}
 
 header {
 	background-color: #3498db;	
 	padding: .5em 0;
-	border-bottom:5px solid #DDD;
+	border-bottom:7px solid #DDD;
 }
 
 header h1 {
@@ -110,15 +118,22 @@ header h1 {
 }
 
 #main-feed {
-	background-color: #ecf0f1;	
+	padding: 2.5em;
 }
 
 .toggle-button {
-	border-radius: 5px;
+	border-radius: 7px;
 	display: inline-block;
-	width: 100px;
-	height:100px;
-	background-color:#CCC;
+	padding:15px 20px;
+	background-color:#ccc;
+}
+
+#feed ul li {
+	width: 100%;
+	border-radius: 7px;
+	background-color: #fff;
+	padding: 10px 0;
+	margin: 10px 0;	
 }
 
 
