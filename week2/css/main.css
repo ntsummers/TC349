@@ -102,7 +102,7 @@ body {
 
 ul {
 	list-style-type: none;
-	padding: 0px;	
+	padding: 0; margin: 0;	
 }
 
 header {
@@ -129,11 +129,12 @@ header h1 {
 }
 
 #feed ul li {
-	width: 100%;
-	border-radius: 7px;
+	width: auto;
+	border: 2px solid #e3e3e3;
+	border-radius: 4px;
 	background-color: #fff;
-	padding: 10px 0;
-	margin: 10px 0;	
+	padding: 1em;
+	margin-bottom: 2em;	
 }
 
 
