@@ -124,21 +124,72 @@ header h1 {
 .toggle-button {
 	border-radius: 7px;
 	display: inline-block;
-	padding:15px 20px;
-	background-color:#ccc;
+	padding:10px 15px;
+	background-color:#fff;
+	border: 1px solid #d9ddd3;
+	color: #2980b9;
+	font-size: 1.2em;
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+.toggle-button:hover {
+	box-shadow: 0 0 10px rgba(41,128,25,.2);
+}
+
+.toggle-button.selected { 
+	background : #2980b9;
+	color: #fff;
+	box-shadow: inset 0 0 10px rgba(0,0,0,.3);
+}
+
+#feed {
+	margin-top:30px;
 }
 
 #feed ul li {
 	width: auto;
-	border: 2px solid #e3e3e3;
+	border: 1px solid #bdc3c7;
 	border-radius: 4px;
 	background-color: #fff;
-	padding: 1em;
-	margin-bottom: 2em;	
+	margin-bottom: 1.5em;	
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
 }
 
+#feed ul li > * {
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	font-size: 1em;	
+}
 
+#feed ul li .user-count {
+	background-color: #bdc3c7;
+	padding: 10px 15px;
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	margin-right: 10px;	
+}
 
+#feed ul li .chat-meta {
+	color: #7f8c8d;
+	margin-left: 10px;
+}
+
+#feed ul li .countdown {
+	float: right;
+	padding: 10px 15px;
+	font-weight: bold;
+	color: #27ae60;
+}
+
+#feed ul li .warning {
+	color: #f39c12;
+}
+
+#feed ul li .alert {
+	color: #d35400;
+}
 
 
 
