@@ -1,0 +1,23 @@
+.masthead {
+  background-color: #0089C3;
+  margin:0px; padding: 50px 0 0 0;
+  height: 182px;
+  color: #F9F9F9;
+  border-bottom: 3px solid #CF4213;
+
+  .avatar {
+    width:50px; height: 50px;
+    border-radius: 100%;
+    background: #E06D5E;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .headline {
+    text-align: center;
+    margin: 0; padding: 50px 0;
+    height: 32px; line-height: 32px;
+    font-family: 'Josefin Slab', serif;
+  }
+}
+  
