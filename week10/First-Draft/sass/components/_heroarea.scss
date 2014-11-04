@@ -1,0 +1,23 @@
+.heroarea {
+  width: 100%;
+  height: 380px;
+  background-color: #FFC556;
+  padding-top: 80px;
+
+  .showoff {
+    width: 680px;
+    height: 380px;
+    background-color: #ABBFA6;
+    margin: 0 auto;
+    bottom: 0;
+    border-top-left-radius:   15px;
+    border-top-right-radius:  15px;
+
+    img {
+
+      border-top-left-radius:   15px;
+      border-top-right-radius:  15px;
+      
+    }
+  }
+}
