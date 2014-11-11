@@ -88,10 +88,7 @@ body {
 
 .heroarea {
   width: 100%;
-  background-color: #FFC556;
-  height: 380px;
-  background-color: #FFC556;
-  padding-top: 80px; }
+  background-color: #FFC556; }
   .heroarea .non-semantic-protector {
     position: relative;
     z-index: 1;
