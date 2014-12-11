@@ -1,0 +1,58 @@
+/* ==========================================================================
+                          Header Style Sheet
+========================================================================== */
+
+$navHighlightColor: #D74630;
+
+header {
+
+  width:  100%;
+  height: 70px;
+  background-color: #444;
+
+  img {
+
+    float:  left;
+    margin: 7px 0;
+    padding:0;
+
+  }
+
+  nav {
+    float:          left;
+    display:        inline-block;
+    width:          100%;
+    height:         100%;
+    vertical-align: middle;
+
+    a {
+      display:          block;
+      width:            25%;
+      height:           auto;
+      text-align:       center;
+      color:            #FFF;
+      text-decoration:  none;
+      font-size:        16px;
+      float:            left;
+      padding:          24px 0;
+      font-weight:      bold;
+
+      -webkit-transition: color .5s, -webkit-transform .5s; /* For Safari 3.1 to 6.0 */
+      transition:         color .5s, transform .5s;
+
+      &:hover {
+        color: $navHighlightColor;
+      }
+
+    }
+  }
+
+  .navHighlight {
+
+    width:      100%;
+    height:     4px;
+    background: $navHighlightColor;
+    float:      left;
+  }
+
+}

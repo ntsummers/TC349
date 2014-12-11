@@ -1,0 +1,256 @@
+/* ==========================================================================
+                            Main Body Style Sheet
+========================================================================== */
+main {
+  background:     #fff;
+  width:          100%;
+  height:         100%;
+  clear:          both;
+  padding-bottom: 4px;
+  box-shadow:     0 0 20px rgba(0, 0, 0, 0.4);
+  display:        inline-table;
+
+  .prev {
+
+    position:       absolute;
+    margin:         auto auto auto 15px;
+    @include breakpoint (sm) { margin: 350px 0px 350px 25px; }
+    top:            0;
+    bottom:         0;
+    height:         50px;
+    width:          50px;
+    @media (min-width:600px) { height:75px; width: 75px; }
+    background:     transparent;
+    color:          #fff;
+    @include breakpoint (sm) { color: #000; }
+    border-radius:  3px;
+    border:         1px solid #fff;
+    @include breakpoint (sm) { border:1px solid #000; }
+
+  }
+
+  .next {
+
+    position:       absolute;
+    margin:         auto 15px auto auto;
+    @include breakpoint (sm) { margin:350px 0px 350px 670px; }
+    @include breakpoint (md) { margin:350px 0px 350px 875px; }
+    @include breakpoint (lg) { margin:350px 0px 350px 1070px; }
+    top:            0;
+    bottom:         0;
+    height:         50px;
+    width:          50px;
+    @media (min-width:600px) { height:75px; width: 75px; }
+    background:     transparent;
+    color:          #fff;
+    @include breakpoint (sm) { color: #000; }
+    border-radius:  3px;
+    border:         1px solid #fff;
+    @include breakpoint (sm) { border:1px solid #000; }
+    right:          0;
+    @include breakpoint (sm) { right: initial; }
+  }
+
+  .larger {
+    @media (min-width:600px) { display: inline-block; }
+  }
+
+  .smaller {
+    display: inline-block;
+    @media (min-width:600px) { display: none; }
+  }
+
+  .contacth1 {
+    padding: 10px;
+    @media (min-width: 500px) { padding: 30px; }
+
+    margin-bottom: 0;
+
+  }
+  .contactp {
+    padding: 0px 10px;
+    @media (min-width: 500px) { padding: 0 30px; }
+
+    margin:  0;
+  }
+
+  form {
+
+    padding:    10px;
+    text-align: center;
+    @media (min-width: 500px) { padding:    30px;
+                                text-align: initial;}
+
+    input {
+
+      margin-bottom: 20px;
+    }
+
+    #name {
+      margin-left: 0;
+      width:       100%;
+      @media (min-width: 500px) { width: 300px;
+                                  margin-left: 30px;}
+    }
+
+    #email {
+      margin-left: 0;
+      width:       100%;
+      @media (min-width: 500px) { width: 300px;
+                                  margin-left: 7px;}
+    }
+
+    textarea {
+
+      margin-left: 0;
+      width:       100%;
+      @media (min-width: 500px) { width: 300px;
+                                  margin-left: 45px;}
+      height:      150px;
+    }
+
+    #submit {
+      background:     #fff;
+      border:         1px solid #000;
+      border-radius:  26px;
+      width:          100px;
+      height:         30px;
+
+      -webkit-transition: color .5s, background .5s, -webkit-transform .5s; /* For Safari 3.1 to 6.0 */
+      transition:         color .5s, background .5s, transform .5s;
+
+      &:hover {
+        background: #333;
+        color:      #fff;
+
+      }
+    }
+  }
+}
+
+.carousel {
+  list-style: none;
+  width:      100%;
+  @include breakpoint(sm) { height: 512px; }
+  @include breakpoint(md) { height: 647px; }
+  @include breakpoint(lg) { height: 700px; }
+  padding:    0;
+  margin:     0;
+  background: #fff;
+
+  li {
+    text-align: center;
+
+    img {
+      top:        20px;
+      left:       40px;
+      max-width:  100%;
+      @include breakpoint(sm) { max-width:  768px;  max-height: 512px; }
+      @include breakpoint(md) { max-width:  970px;  max-height: 647px; }
+      @include breakpoint(lg) { max-width:  1020px; max-height: 700px; }
+      margin:     0 auto;
+    }
+  }
+}
+
+.carouselNav {
+  list-style:     none;
+  padding:        0px;
+  margin-top:     -45px;
+  text-align:     center;
+
+  li {
+    display:        inline-block;
+    border-radius:  10px;
+    width:          15px;
+    height:         15px;
+    margin:         0 5px;
+    border:         2px solid #000;
+    background:     #fff;
+    cursor:         pointer;
+
+    &.active {
+      background: #000;
+    }
+  }
+}
+
+.portfolioList {
+
+  padding: 10px;
+  @include breakpoint(md) { padding: 20px;}
+  @include breakpoint(lg) { padding: 40px;}
+  margin:  0;
+
+  .spacer {
+    padding: 5px;
+    @include breakpoint(md) { padding: 10px;}
+    @include breakpoint(lg) { padding: 20px;}
+
+  }
+
+  .vertical {
+
+    list-style-type: none;
+    width:           100%;
+    @media (min-width: 500px) { width: 50%; }
+    @include breakpoint(sm)   { width: 33%; }
+    display:         inline-block;
+    float:           left;
+
+    img {
+
+      max-width: 100%;
+      height:    auto;
+      display:   inline-block;
+    }
+  }
+
+  .horizontal {
+
+    list-style-type: none;
+    width:           100%;
+    @include breakpoint(sm)   { width:66%; }
+    display:         inline-block;
+    float:           left;
+
+    img {
+
+      max-width: 100%;
+      height:    auto;
+      display:   inline-block;
+    }
+  }
+
+  .imgDescription {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    margin-top: -30px;
+
+    p {
+      position:   relative;
+      margin:     0;
+      height:     25px;
+      padding:    5px 0 0 5px;
+      background: -moz-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 100%);
+      background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(0,0,0,.5)),color-stop(100%,rgba(0,0,0,.5)));
+      background: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 100%);
+      background: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 100%);
+      background: -ms-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 100%);
+      background: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.5) 100%);
+    }
+  }
+
+  li:nth-child(1) {
+    float: left;
+    @include breakpoint(sm) { float:right }
+  }
+  li:nth-child(4) {
+    float:right;
+  }
+  li:nth-child(6) {
+    float:right;
+  }
+
+}
